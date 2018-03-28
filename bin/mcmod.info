@@ -1,0 +1,16 @@
+[
+{
+  "modid": "examplemod",
+  "name": "Witchery: Reincarnate",
+  "description": "A 1.10 re-creation of Emoniph's witchery",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Twisted_Code"],
+  "credits": "The Forge and FML guys, for making mods like this possible. My friends on discord, for the encouragement to give it a shot",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
