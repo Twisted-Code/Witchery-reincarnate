@@ -1,6 +1,6 @@
 [
 {
-  "modid": "examplemod",
+  "modid": "witcheryreincarnate",
   "name": "Witchery: Reincarnate",
   "description": "an open source re-creation of Emoniph's Witchery, updated for 1.10",
   "version": "${version}",
