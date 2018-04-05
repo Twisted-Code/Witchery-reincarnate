@@ -1,1 +1,5 @@
 /run/logs/
+/run/mods/
+/run/config/
+/run/crash-reports/
+/run/asm/ccl_modular/
