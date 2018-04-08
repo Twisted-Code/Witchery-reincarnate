@@ -1,7 +1,7 @@
 package com.Twisted_Code.witchery.init;
 
 import com.Twisted_Code.witchery.Reference;
-import com.Twisted_Code.witchery.items.ItemMutandis;
+import com.Twisted_Code.witchery.items.*;
 import com.Twisted_Code.witchery.util.Utils;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -13,17 +13,33 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 	
 	public static Item Mutandis;
+	public static Item ClayJar;
+	public static Item IngredientExhale;
+	public static Item MandrakeRoot;
+	public static Item WoodAsh;
 	
 	public static void init(){
-		Mutandis = new ItemMutandis("mutandis", "mutandis");
+		Mutandis = new ItemMutandis					("mutandis", "mutandis");
+		ClayJar = new ItemClayJar					("clayjar", "clayjar");
+		IngredientExhale = new ItemIngredientExhale	("ingredientexhale", "ingredientexhale");
+		MandrakeRoot = new ItemMandrakeRoot			("mandrakeroot", "mandrakeroot");
+		WoodAsh = new ItemWoodAsh					("woodash", "woodash");
 	}
 
 	public static void register(){
 		registerItem(Mutandis);
+		registerItem(ClayJar);
+		registerItem(IngredientExhale);
+		registerItem(MandrakeRoot);
+		registerItem(WoodAsh);
 	}
 
 	public static void registerRenders(){
 		registerRender(Mutandis);
+		registerRender(ClayJar);
+		registerRender(IngredientExhale);
+		registerRender(MandrakeRoot);
+		registerRender(WoodAsh);
 	}
 	public static void registerItem(Item item){
 		GameRegistry.register(item);
