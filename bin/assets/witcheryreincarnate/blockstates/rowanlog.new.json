@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "axis=y":  { "model": "witcheryreincarnate:rowanlogtop" },
+        "axis=z":   { "model": "witcheryreincarnate:rowanlogtop", "x": 90 },
+        "axis=x":   { "model": "witcheryreincarnate:rowanlogtop", "x": 90, "y": 90 },
+        "axis=none": { "model": "witcheryreincarnate:rowanlog" }
+        }
+    }
+}
