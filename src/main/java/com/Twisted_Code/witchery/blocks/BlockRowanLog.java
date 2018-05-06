@@ -16,6 +16,7 @@ public class BlockRowanLog extends Block{
 		this.setHardness(1);
 		this.setResistance(5);
 		this.setSoundType(SoundType.WOOD);
+		//now if only I could get the model to work for this log to look like a log...
 	}
 	
 }

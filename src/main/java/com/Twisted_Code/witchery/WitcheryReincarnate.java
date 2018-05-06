@@ -1,6 +1,7 @@
 package com.Twisted_Code.witchery;
 import com.Twisted_Code.witchery.init.ModBlocks;
 import com.Twisted_Code.witchery.init.ModItems;
+import com.Twisted_Code.witchery.init.ModTools;
 //This class is the mod-level equivalent of the class containing a Java program's "public static void main"
 import com.Twisted_Code.witchery.proxy.CommonProxy;
 import com.Twisted_Code.witchery.util.Utils;
@@ -27,8 +28,10 @@ public class WitcheryReincarnate {
 		
 		Utils.getLogger().debug("registering items");
 		ModItems.init();
+		ModTools.init();
 		ModBlocks.init();
 		ModItems.register();
+		ModTools.register();
 		ModBlocks.register();
 		Utils.getLogger().debug("registering renders");
 		Proxy.registerRenders();

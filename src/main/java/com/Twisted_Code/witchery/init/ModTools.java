@@ -1,50 +1,37 @@
 package com.Twisted_Code.witchery.init;
+/* This class is not likely to contain many entries as this mod
+ * isn't going to be very tool-heavy, or at least not at first,
+ * but maybe I'll at least end up using it to implement poppets? 
+ * In any case, implementing tools as part of the tutorial
+ * I'm following, so without further ado...
+ */
 
 import com.Twisted_Code.witchery.Reference;
-import com.Twisted_Code.witchery.items.*;
+import com.Twisted_Code.witchery.items.ItemToolArthana;
 import com.Twisted_Code.witchery.util.Utils;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ModItems {
-	
-	public static Item Mutandis;
-	public static Item ClayJar;
-	public static Item IngredientExhale;
-	public static Item MandrakeRoot;
-	public static Item WoodAsh;
-	
+public class ModTools {
 	public static void init(){
-		Mutandis = new ItemMutandis					("mutandis", "mutandis");
-		ClayJar = new ItemClayJar					("clayjar", "clayjar");
-		IngredientExhale = new ItemIngredientExhale	("ingredientexhale", "ingredientexhale");
-		MandrakeRoot = new ItemMandrakeRoot			("mandrakeroot", "mandrakeroot");
-		WoodAsh = new ItemWoodAsh					("woodash", "woodash");
+		ItemToolArthana goldArthana = new ItemToolArthana(ToolMaterial.GOLD, "goldArthana"); //I'll probably change the material traits at a later date, but for now, gold's standard attributes will suffice
 	}
 
 	public static void register(){
-		//as this list gets longer, it may be worth considering a for loop "for I in itemarray: registerItem(I)"
-		registerItem(Mutandis);
-		registerItem(ClayJar);
-		registerItem(IngredientExhale);
-		registerItem(MandrakeRoot);
-		registerItem(WoodAsh);
+		
 	}
 
 	public static void registerRenders(){
-		registerRender(Mutandis);
-		registerRender(ClayJar);
-		registerRender(IngredientExhale);
-		registerRender(MandrakeRoot);
-		registerRender(WoodAsh);
+		
 	}
 	public static void registerItem(Item item){
 		GameRegistry.register(item);
-		Utils.getLogger().info("registered item "+item.getUnlocalizedName().substring(5));
+		Utils.getLogger().info("registered tool-item "+item.getUnlocalizedName().substring(5));
 	}
 
 	public static void registerRender(Item item){
