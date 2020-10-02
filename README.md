@@ -1,7 +1,7 @@
 # Witchery-reincarnate
 an open source re-creation of Emoniph's Witchery, updated for 1.10+
 
-**Notice: This mod, or at least the 1.10 branch of it, is officially on hiatus while I am working on my general education courses in college. When it does come off of hiatus, I am much more likely to work on a 1.12 branch and leave the 1.10 branch as-is until/unless I have time and motivation to work on it full-time. I will EVENTUALLY™ return to this at some point, but I just don't have time or stamina with college taking up most of my time and all of my stamina**
+**Notice: This mod, or at least the pre-1.15 branch of it, is officially on hiatus while I am working on my general education courses in college. When it does come off of hiatus, I am much more likely to work on a 1.15 branch and leave the other branches as-is until/unless I have time and motivation to work on it full-time. I will EVENTUALLY™ return to this at some point, but I just don't have time or stamina with college taking up most of my time and all of my stamina**
 
 **Follow up notice: I still intend to come back to this Some day™. I'm trying again to get into modding in 1.15, but before I tackle anything like this I want to make a basic "library" mod. Way too much boilerplate code involved not to handle it in a "reusable code" way.**
 
